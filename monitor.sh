@@ -95,7 +95,7 @@ echo "Checking Alerts..."
 
 ALERT_TRIGGERED=false
 
-if [ "$DISK" -gt 80 ]; then
+if [ "$DISK" -gt 85 ]; then
     echo "[$DATE] WARNING: Disk usage above 80% (${DISK}%)" >> "$ALERTFILE"
     echo "⚠ Disk usage high: ${DISK}%"
     ALERT_TRIGGERED=true
